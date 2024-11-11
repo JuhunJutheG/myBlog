@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --maincolor1: #0FA3B1;
+    --maincolor2: #b5e2fa;
+    --maincolor3: #f9f7f3;
+    --maincolor4: #eddea4;
+    --maincolor5: #f7a072;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Rubik";
+    background-color: var(--maincolor3);
+    text-align: center;
+
+}
+
+.main1 {
+    background-color: var(--maincolor2);
+}
+ 
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--maincolor1);
+    opacity: 90%;
+    height: 3rem;
+    border-bottom: 2px dotted #333;
+    border-left: 2px dotted #333;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    border-radius: 0 0 0 25px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+}
+
+.nav-bar li {
+    padding: 1rem 3rem;
+    
+    
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #222;
+}
+
+.nav-bar li:hover {
+    background-color: var(--maincolor3);
+    border-radius: 50% 50% 0 0;
+    color: white;
+    box-shadow: 0 0 10px #222;
+    border: 2px dashed #222;
+
+}
+
+.intro {
+    margin: 0 3rem;
+    padding: 6rem 0 2rem 0;
+}   
+
+.intro .description {
+    margin: 2rem auto 0;
+}
+
+.about {
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin: 2rem auto;
+    line-height: 5rem;
+    letter-spacing: .1rem;
+    
+}
+
+.name:hover {
+    background-color: rgba(255, 0, 0, 0.379);
+    box-shadow: 0 0 5px #222;
+    cursor:help;
+
+        
+}
+
+.about1 {
+
+    box-shadow: 1px 1px 2px #333;
+}
+
+.about .small {
+    font-size: 1rem;
+    letter-spacing: -1px;
+    color: #888
+}
+
+.quote {
+    margin-top: 2rem;
+}
+
+.about .italic {
+    color: #555;
+    font-style: italic;
+}
+
+.socials {
+    letter-spacing: 2rem;
+}
+.about a {
+    color: #222;
+}
+.projects {
+    padding: 2rem 0;
+    margin: 0 3rem;
+}
+
+.projects h2 {
+    margin-bottom: 2rem;
+}
+
+.main2 {
+    background-color: var(--maincolor4);
+}
+
+footer {
+    height: 3.8rem;
+    background-color: var(--maincolor5);
+    border-top: 2px dashed #333;
+    padding: 1.5rem;
+    text-align: end;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-bar ul {
+        font-size: 1rem;
+    }
+    .nav-bar li {
+        padding: 1rem 1.5rem;
+    }
+    #about {
+        font-size: 1.5rem;
+    .dot {
+        display: block;
+    }
+}
